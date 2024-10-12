@@ -1,0 +1,42 @@
+/* Контейнер для центрирования всего содержимого */
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали */
+    /* height: 100vh; Контейнер на всю высоту экрана */
+    text-align: center; /* Текст по центру */
+  }
+  
+  /* Адаптивная картинка */
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Контент по умолчанию на 100% ширины */
+  .centered-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  @media (min-width: 768px) {
+    /* На десктопе контент занимает 1/5 экрана */
+    .centered-content {
+      width: 20%;
+    }
+  }
+  
+  /* Кнопка на всю ширину на мобильных */
+  .auth-button {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    /* На десктопе ширина кнопки по содержимому текста */
+    .auth-button {
+      padding: 0 16px; /* Добавляем немного отступов */
+    }
+  }
+  

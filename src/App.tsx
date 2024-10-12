@@ -3,7 +3,7 @@ import bridge, { UserInfo } from '@vkontakte/vk-bridge';
 import { View, SplitLayout, SplitCol, ScreenSpinner } from '@vkontakte/vkui';
 import { useActiveVkuiLocation } from '@vkontakte/vk-mini-apps-router';
 
-import { Persik, Home } from './panels';
+import { Shop, Wallet, Tasks, Profile, Home } from './panels';
 import { DEFAULT_VIEW_PANELS } from './routes';
 
 export const App = () => {
@@ -25,7 +25,10 @@ export const App = () => {
       <SplitCol>
         <View activePanel={activePanel}>
           <Home id="home" fetchedUser={fetchedUser} />
-          <Persik id="persik" />
+          <Profile id="profile" />
+          <Tasks id="tasks" />
+          <Wallet id="wallet" />
+          <Shop id="shop" />
         </View>
       </SplitCol>
     </SplitLayout>
