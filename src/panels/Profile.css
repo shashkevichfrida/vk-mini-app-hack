@@ -1,0 +1,44 @@
+/* Profile.css */
+.profile-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+display: flex;
+align-items: center;
+}
+
+.profile-info div {
+margin-left: 15px;
+}
+
+.profile-stats {
+display: flex;
+justify-content: space-between;
+width: 120px;
+}
+
+.progress-info {
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+
+.progress-chart {
+padding: 20px;
+}
+
+.fixed-tabbar {
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 1000;
+background-color: #ffffff; /* Установите нужный цвет фона */
+box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень для визуализации */
+}
